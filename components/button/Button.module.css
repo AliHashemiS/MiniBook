@@ -18,3 +18,9 @@
     max-width: 100%;
     display: inline-block;
 }
+
+@media (hover: hover) and (pointer: fine) {
+    .button:hover{
+        background-color: rgba(var(--card-rgb), 0.1);
+    }
+}
