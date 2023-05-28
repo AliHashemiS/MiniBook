@@ -3,7 +3,7 @@ import { Button } from '../button/Button'
 import style from './Container.module.css'
 
 const dataFetch = () => {
-  return fetch('/api/dataInfo', { cache: 'no-store' })
+  return fetch(`${process.env.link}api/dataInfo`, { cache: 'no-store' })
     .then(res => res.json())
 }
 

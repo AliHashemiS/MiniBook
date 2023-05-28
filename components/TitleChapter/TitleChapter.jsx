@@ -1,12 +1,12 @@
 import style from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
-  return fetch('/api/dataTitle', { cache: 'no-store' })
+  return fetch(`${process.env.link}api/dataTitle`, { cache: 'no-store' })
     .then(res => res.json())
 }
 
 const dataChapterFetch = () => {
-  return fetch('/api/dataChapter', { cache: 'no-store' })
+  return fetch(`${process.env.link}api/dataChapter`, { cache: 'no-store' })
     .then(res => res.json())
 }
 
