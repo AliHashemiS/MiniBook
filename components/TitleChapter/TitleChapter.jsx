@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
@@ -19,22 +20,22 @@ export async function TitleChapter () {
       {dataTitle.map(title => (
         <div key={title.id} className={style.tableComponent}>
           <div className={style.tableHeader}>
-            <a href={title.link} className={[style.card]}>
+            <Link href={title.link ?? ''} className={[style.card]}>
               <p className={style.textWhiteSpace}>
                 {title.name}
               </p>
               <span className={style.prueba}>-&gt;</span>
-            </a>
+            </Link>
           </div>
           {dataChapter.map(chapter => title.id === chapter.idTitle
             ? (
               <div key={chapter.id} className={style.tableContent}>
-                <a href={chapter.link} className={style.card}>
+                <Link href={chapter.link ?? ''} className={style.card}>
                   <p className={style.textWhiteSpace}>
                     {chapter.name}
                   </p>
                   <span>-&gt;</span>
-                </a>
+                </Link>
               </div>
               )
             : (null))}

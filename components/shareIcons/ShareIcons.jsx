@@ -13,7 +13,7 @@ export async function ShareIcons () {
   return (
     <div className={styles.socialWrapper}>
       {dataSocialMedia.map(social => (
-        <Link key={social.id} href={social.link}>
+        <Link key={social.id} href={social.link ?? ''}>
           <FontAwesomeIcon className={styles.icon} icon={social.icon} />
         </Link>
       ))}
