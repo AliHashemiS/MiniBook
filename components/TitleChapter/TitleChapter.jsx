@@ -1,12 +1,12 @@
 import style from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
-  return fetch("https://mini-book.vercel.app/api/dataTitle", { cache: 'no-store' })
+  return fetch(process.env.URL + '/api/dataTitle', { cache: 'no-store' })
     .then(res => res.json())
 }
 
 const dataChapterFetch = () => {
-  return fetch("https://mini-book.vercel.app/api/dataChapter", { cache: 'no-store' })
+  return fetch(process.env.URL + '/api/dataChapter', { cache: 'no-store' })
     .then(res => res.json())
 }
 
@@ -21,8 +21,9 @@ export async function TitleChapter () {
           <div className={style.tableHeader}>
             <a href={title.link} className={[style.card]}>
               <p className={style.textWhiteSpace}>
-                {title.name} asdadjnqwdjnqwdjnqwjndqwhjndqwhbdqwbdqwdqwuduqwdfbnqwidnmqwdfasdfwefwewef <span>-&gt;</span>
+                {title.name}
               </p>
+              <span className={style.prueba}>-&gt;</span>
             </a>
           </div>
           {dataChapter.map(chapter => title.id === chapter.idTitle
@@ -30,7 +31,7 @@ export async function TitleChapter () {
               <div key={chapter.id} className={style.tableContent}>
                 <a href={chapter.link} className={style.card}>
                   <p className={style.textWhiteSpace}>
-                    {chapter.name} :id - {chapter.idTitle} - :id Title - {title.id}
+                    {chapter.name}
                   </p>
                   <span>-&gt;</span>
                 </a>
