@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './ShareIcons.module.css'
 
 const dataFetch = () => {
-  return fetch(`https://mini-book.vercel.app/api/dataSocialMedia`, { cache: 'no-store' })
+  return fetch("https://mini-book.vercel.app/api/dataSocialMedia", { cache: 'no-store' })
     .then(res => res.json())
 }
 

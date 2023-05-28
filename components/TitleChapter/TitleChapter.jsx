@@ -1,12 +1,12 @@
 import style from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
-  return fetch(`https://mini-book.vercel.app/api/dataTitle`, { cache: 'no-store' })
+  return fetch("https://mini-book.vercel.app/api/dataTitle", { cache: 'no-store' })
     .then(res => res.json())
 }
 
 const dataChapterFetch = () => {
-  return fetch(`https://mini-book.vercel.app/api/dataChapter`, { cache: 'no-store' })
+  return fetch("https://mini-book.vercel.app/api/dataChapter", { cache: 'no-store' })
     .then(res => res.json())
 }
 
