@@ -1,0 +1,49 @@
+.shareWrap {
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+    text-align: right;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLeft .navRight {
+    min-width: 220px;
+    flex: 0 auto;
+}
+
+.nav {
+    display: flex;
+    min-height: 5rem;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    align-items: center;
+    border-bottom: 1px solid #f2f4f7;
+    background-image:  
+    url("https://images.squarespace-cdn.com/content/v1/5fe89dc9fce1941cd9ed77b4/1612295190630-2DZC3G5K609XWV465V5R/CathyHP-AboutBackground-25.jpg?format=2500w");
+    background-size: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.smallImage {
+    width:150px;
+    height:auto;
+}
+
+@media screen and (max-width: 991px){
+    .smallImage {
+        width:100px;
+    }
+}
