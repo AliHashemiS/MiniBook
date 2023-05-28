@@ -42,18 +42,6 @@ export async function Container () {
             </div>
           </div>
           <div className={style.rightContent}>
-            {/* <div className={style.textSection}>
-              <div className={style.smallImageWrapper}>
-                <img className={style.smallImage} src='https://m.media-amazon.com/images/I/71cUdAqWctL._AC_UF1000,1000_QL80_.jpg' />
-              </div>
-              <h1 className={style.heroHeading}>
-                Mini Book
-              </h1>
-              <p className={style.textSizeRegular}>
-                Cathy Hackl is one of the most sought-after keynote technology speakers in the world. Considered one of the top women in augmented reality, virtual reality, spatial computing and innovation, she works at the intersection of future technology, strategy, and storytelling, drawing audiences from around the world and across industries.
-              </p>
-            </div> */}
-            {/* <div className={style.divider} /> */}
             <div className={style.indexContainer}>
               <h1 className={style.indexTitle}>
                 Index
