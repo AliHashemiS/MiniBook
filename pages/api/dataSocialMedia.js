@@ -35,7 +35,7 @@ export default function handler (req, res) {
       {
         id: 4,
         icon: faLink,
-        link: process.env.link
+        link: process.env.URL
       }
     ]
   )
