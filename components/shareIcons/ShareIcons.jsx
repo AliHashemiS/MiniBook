@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './ShareIcons.module.css'
 
 const dataFetch = () => {
-  return fetch('http://localhost:3000/api/dataSocialMedia', { cache: 'no-store' })
+  return fetch('/api/dataSocialMedia', { cache: 'no-store' })
     .then(res => res.json())
 }
 

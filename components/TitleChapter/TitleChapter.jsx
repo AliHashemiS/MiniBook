@@ -1,12 +1,12 @@
 import style from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
-  return fetch('http://localhost:3000/api/dataTitle', { cache: 'no-store' })
+  return fetch('/api/dataTitle', { cache: 'no-store' })
     .then(res => res.json())
 }
 
 const dataChapterFetch = () => {
-  return fetch('http://localhost:3000/api/dataChapter', { cache: 'no-store' })
+  return fetch('/api/dataChapter', { cache: 'no-store' })
     .then(res => res.json())
 }
 
