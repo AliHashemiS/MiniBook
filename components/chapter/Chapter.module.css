@@ -1,0 +1,28 @@
+.pagePadding{
+    display: block;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.containerSmall{
+    width: 100%;
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 991px){
+    .pagePadding{
+        padding-right: 6vw;
+        padding-left: 6vw;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

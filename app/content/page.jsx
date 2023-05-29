@@ -1,5 +1,5 @@
 import { Header } from '@/components/header/Header'
-import { Container } from '@/components/container/Container'
+import { Chapter } from '@/components/chapter/Chapter'
 
 export const metadata = {
   title: 'Mini Book - Home',
@@ -11,8 +11,7 @@ export const metadata = {
 export default function HomePage () {
   return (
     <div>
-
-      <Container />
+      <Chapter />
     </div>
   )
 }
