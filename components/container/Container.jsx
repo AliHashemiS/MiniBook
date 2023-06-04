@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { TitleChapter } from '../TitleChapter/TitleChapter'
-import { Button } from '../button/Button'
 import { Footer } from '../footer/Footer'
 import styles from './Container.module.css'
 import Subscription from '../subscription/Subscription'
@@ -32,7 +31,6 @@ export function Container () {
               <p className={styles.textSizeRegular}>
                 This minibook helps you make sense of the convergence of technologies like VR, AR, AI, XR, and mixed reality today as well as gives you a peek into the post-smartphone and post-computer future, plus an analysis of what Apple’s Reality Pro headset might unlock for business and for humanity. This is Your Guide to the Post-Smartphone Future Powered by AI, AR, and XR.
               </p>
-              {/* {dataButton.map(button => (<Button key={button.id} buttonName={button.nameButton} buttonlink={button.link} />))} */}
             </div>
           </div>
           <div className={styles.rightContent}>
