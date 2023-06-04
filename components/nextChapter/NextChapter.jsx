@@ -4,7 +4,7 @@ import { Button } from '../button/Button'
 export function NextChapter ({ nextChapterName, buttonLinkNext, buttonLinkPrevious }) {
   return (
     <div className={styles.container}>
-      <Button buttonName='🡰 Previous' buttonlink={buttonLinkPrevious} />
+      <Button buttonName='<- Previous' buttonlink={buttonLinkPrevious} />
       <div className={styles.textContainer}>
         <h3 className={styles.textTitle}>
           Next content
@@ -13,7 +13,7 @@ export function NextChapter ({ nextChapterName, buttonLinkNext, buttonLinkPrevio
           {nextChapterName}
         </p>
       </div>
-      <Button buttonName='Next 🡲' buttonlink={buttonLinkNext} />
+      <Button buttonName='Next ->' buttonlink={buttonLinkNext} />
     </div>
   )
 }
