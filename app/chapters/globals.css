@@ -1,0 +1,30 @@
+ul {
+  padding-left: 2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: rgb(139, 53, 240);
+}
+
+img {
+  border-radius: 1em;
+  width: 100%;
+}
+
+@media screen and (max-width: 751px){
+  h1 {
+    font-size: x-large;
+  }
+  h3 {
+    font-size: medium;
+  }
+}

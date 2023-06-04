@@ -1,0 +1,28 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+# Spatial Content Discovery
+
+It’s one thing to create localized AR content. But how are people going to find it? Walking around and experiencing augmented reality in real-time is cool. But how do we find out specific AR content? Much like using Google search, we’ll need some kind of search for AR. Augmented Reality lets us see an augmented storefront or how an outfit will look on us in an AR mirror. Open AR, plus the cloud, lets us create localized spatial content anywhere in the world - that is if it has a digital twin.
+ 
+One example of an Open AR Cloud app is Concrete Oasis by Suzan Oslin and Ali Hantal. Oslin and her team used a non-operating fountain in Pershing Square Park, Los Angeles, to show off the Open AR Cloud and create an experience to bring awareness to California’s water crisis. 
+
+{<p className={styles.textReplyMessage}>“The Los Angeles team uploaded photogrammetry of the park into a software called Maya to recreate portions of the scene in 3D. Using the 3D scene as a reference, artists created assets relative to the real world. From there, the AR experience was made. Developers added the interactions in Unity, then uploaded the asset bundles to the cloud, making them available for the augmented reality experience through XR Master’s Spatial Browser. Assets can be placed live, at the location, and through the XR Master’s app.” {<Link className={styles.link} href={"https://www.awexr.com/blog/434-how-the-open-ar-cloud-enables-the-metaverse" ?? ''}>[29]</Link>}</p>}
+
+The Concrete Oasis team used a real-time water simulation by Zibra.ai liquids with real-time rendering by NVIDIA Cloud XR. Of course, a project like this collects data. The team plans to use in-app data to measure user actions taken, content viewed, dwell times, rebate downloads, and pledge agreements. {<Link className={styles.link} href={"https://www.linkedin.com/posts/impactimmersive_one-million-water-guardians-sheparding-us-activity-7057398205700849664-x5Oc?utm_source=share&utm_medium=member_desktop" ?? ''}>[30]</Link>}
+
+{<p className={styles.inBox}><b>Prototype of Concrete Oasis:</b> {<Link className={styles.link} href={"https://youtu.be/Obg9qbXu-zQ" ?? ''}>[Video Link]</Link>}</p>}
+
+Spatial content isn’t just a one-and-done. Part of what will make spatial content is that it’s buildable. The internet wasn’t a few people building web pages and then being done. Its open source made it possible for other people to continue building on the web with new apps and services. 
+
+Spatial content needs to be buildable as well. There’s a lot that comes with this. 
+- Dynamic digital twins of the physical world
+- A mapped world updated in real-time (made possible with IoT and computer vision)
+- Live spatial content and metadata in the AR cloud 
+- Decentralized and open AR that’s buildable 
+
+Instead of having to scan the environment by using our phones to locate the floor, future spatial content will appear based on its geo-posed localized locations. As technology improves, a virtual object will be placed in the exact location. Today, Openarcloud.org says they can place virtual objects within 6 degrees of freedom. {<Link className={styles.link} href={"https://www.openarcloud.org/oscp" ?? ''}>[31]</Link>}
+
+Whether Open AR becomes the standard of smart glasses, plus a spatial content world, remains to be seen. But having the standards, protocols, and augmented languages is essential for building a smart glasses-accessible world. 
+
+export default ({ children }) => <div className={styles.container}>{children}</div>

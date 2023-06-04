@@ -1,0 +1,33 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+# AR Glasses Glossary
+
+**AR Cloud**        
+The AR cloud allows a persistent digital twin of the physical world.
+
+**Geopose**         
+Geopose is when augmented reality is defined relative to a geological reference point. Geopose and localization work together to anchor AR objects in a physical environment. 
+
+**Localization**        
+Localization is used to view AR at a specific physical spot without any special markers.
+
+**NED (Near Eye Displays)**      
+Near eye displays are the hardware that converts light on one’s pupil to show an image on the retina. 
+
+**Nit**      
+A nit is a unit of measurement that refers to the amount of light that is emitted from a surface or object.
+
+**Occlusion**       
+Occlusion is the ability to cover a virtual, augmented object with a physical one. It is what lets AR go behind a physical object.
+
+**Open XR**     
+Open XR is an initiative created by Khronos Group for a royal-free, open XR ecosystem.
+
+**Waveguide**       
+Waveguides are thin pieces of glass or plastic inside headsets like Microsoft Hololens and MagicLeap devices. Waveguides help bend and combine light into your eye. 
+
+**XR**      
+XR stands for extended reality. It’s what people use when a device doesn’t solidly fit on the VR or AR side of the spectrum. XR refers to the layers of VR, AR, and everything in between.
+
+export default ({ children }) => <div className={styles.container}>{children}</div>

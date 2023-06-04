@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import style from './TitleChapter.module.css'
+import styles from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
   return fetch(process.env.URL + '/api/dataTitle', { cache: 'no-store' })
@@ -16,25 +16,25 @@ export async function TitleChapter () {
   const dataChapter = await dataChapterFetch()
 
   return (
-    <div className={style.sectionsWrapper}>
+    <div className={styles.sectionsWrapper}>
       {dataTitle.map(title => (
-        <div key={title.id} className={style.tableComponent}>
-          <div className={style.tableHeader}>
-            <Link href={title.link ?? ''} className={[style.card]}>
-              <p className={style.textWhiteSpace}>
+        <div key={title.id} className={styles.tableComponent}>
+          <div className={styles.tableHeader}>
+            <Link href={title.link ?? ''} className={[styles.card]}>
+              <p className={styles.textWhiteSpace}>
                 {title.name}
               </p>
-              <span className={style.prueba}>-&gt;</span>
+              <span className={styles.arrow}>➜</span>
             </Link>
           </div>
           {dataChapter.map(chapter => title.id === chapter.idTitle
             ? (
-              <div key={chapter.id} className={style.tableContent}>
-                <Link href={chapter.link ?? ''} className={style.card}>
-                  <p className={style.textWhiteSpace}>
+              <div key={chapter.id} className={styles.tableContent}>
+                <Link href={chapter.link ?? ''} className={styles.card}>
+                  <p className={styles.textWhiteSpace}>
                     {chapter.name}
                   </p>
-                  <span>-&gt;</span>
+                  <span className={styles.arrow}>➜</span>
                 </Link>
               </div>
               )

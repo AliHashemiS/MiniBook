@@ -1,0 +1,14 @@
+.container{
+    margin: 2em;
+}
+
+.barLoader{
+    position: fixed;
+    height: 75%;
+}
+
+@media screen and (max-width: 551px){
+    .container{
+        margin: 1.3em;
+    }
+}

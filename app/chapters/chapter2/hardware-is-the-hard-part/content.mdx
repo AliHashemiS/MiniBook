@@ -1,0 +1,14 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+![Chapter2](http://127.0.0.1:3000/images/Ch2.png)
+
+Applying a supercomputer to someone's face is no small feat. In fact, technicians have been trying to make devices that fit on our heads for decades. In 1968, the Sword of Damocles was created by Ivan Sutherland and is considered the first virtual reality headset. Unfortunately, the headset was so heavy, it had to be attached to a mechanical arm suspended from the ceiling!
+
+Google Glass, released in 2012, was the first consumer device. Although Google Glass never went mainstream, it proved that a camera, microphone, wifi, and GPS could fit onto a pair of glasses. The Vuzix STAR 1200XL glasses were also released around the same time as Google Glass. They were dubbed as “see-through-AR enabled” eyewear and had a 35-degree field of view. Yet, like Google Glass, they never caught on. {<Link className={styles.link} href={"https://ir.vuzix.com/news-events/press-releases/detail/504/vuzix-announces-advanced-star-1200-xl-see-through-augmented" ?? ''}>[8]</Link>} 
+
+From 2014 to 2016, augmented reality glasses took a back seat to VR headsets. The Oculus Rift VR Kickstarter went live in 2012, and the DK1 shipped in 2013. A year later, Facebook acquired Oculus. HTC released the HTC Vive in 2016, and the race for wireless VR was on. 
+
+When Intel announced its Vaunt glasses in 2018, they were equipped with a red laser that projected an image onto the back of a wearer’s retina instead of depending on cameras and LED displays. {<Link className={styles.link} href={"https://www.pcmag.com/news/intels-vaunt-glasses-disguise-their-smarts" ?? ''}>[9]</Link>} The Vaunts never went live. Intel shut down the project due to a lack of interest.
+
+export default ({ children }) => <div className={styles.container}>{children}</div>

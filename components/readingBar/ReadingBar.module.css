@@ -1,0 +1,56 @@
+.progress{
+    display: flex;
+    background-color: gray;
+    border-radius: 6px;
+    height: 100%;
+    width: 10px;
+}
+
+.progressDone{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: purple;
+    box-shadow: 0 5px 5px -6px #0546e0, 0 3px 7px #1172f9;
+    border-radius: 20px;
+    color: #fff;
+    height: 0;
+    width: 100%;
+    transition: 0s ease 0s;
+}
+
+.progressValue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+    border: 1px solid black;
+    padding: 0.5em;
+    color: black;
+    min-width: 4em;
+    margin: -3em;
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 551px){
+    .progress{
+        width: 5px;
+    }
+
+    .progressValue{
+        font-size: 0.7em;
+        min-width: 3.5em;
+    }
+
+    .icon {
+        width: 20px;
+        height: 12px;
+        color: black;
+    }
+}

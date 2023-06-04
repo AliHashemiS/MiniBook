@@ -1,0 +1,35 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+![Chapter3](http://127.0.0.1:3000/images/Ch3.png)
+
+{<h2 className={styles.centerText}>Nora’s story</h2>}
+{<h3 className={styles.centerText}>Ann Arbor, Michigan</h3>}
+{<h3 className={styles.centerText}>April 1, 2034</h3>}
+
+It was a cool, sunny morning in Ann Arbor. Nora went downstairs earlier than usual to check her seedlings on the windowsill. She grabbed her new AR smart glasses with hologram-based technology. Their promise of a screenless existence really made sense to her considering she now had a toddler and needed a lot more freedom at this stage of her life.
+
+Her first garden efforts seemed the perfect point to use her new glasses and test their capabilities. The vegetables she planted were sprouting and might be ready to be planted.  Unfortunately, she didn’t label the seeds when she planted them so she lost track of which vegetable was which. Some of the tiny plants were starting to wither, and she wasn’t sure why. 
+
+When Nora turned on her glasses, her kitchen came to life as she scanned the room. 
+
+“Ok, Cherry,” (Nora named the AI in the glasses after her favorite fruit.) “Focus mode. What should I do about these plants?”
+
+Cherry identified each plant in the tray to be broccoli, green beans, and zucchini–in that order. Cherry was connected to the internet and could identify the plants by their leaves. “I recommend you plant the green beans and zucchini based on the Farmer’s Almanac for your area.”
+
+“Ok, thanks Cherry,” said Nora. “But what do I do about the broccoli? They’re so long and spindly.”
+
+Cherry scanned the broccoli and displayed each plant’s stats for water, sunlight, and heat. “The broccoli has adequate water,” Cherry said, “but they don’t have enough light so the stems are reaching too high. Plant them or change the light source.”
+
+Nora picked up the trays and carried them outside to the garden. Cherry recognized the number of plants and, in AR, showed what the plants would look like fully grown. With this guidance,  Nora could see where to plant them and could visualize Cherry's layout for the final planting even including the exact depth to plant the seedlings.  
+
+It was that simple. Nora only wished Cherry could simplify motherhood as she ran upstairs to her baby’s cries. “Come see Mommy’s new garden, Christine. Pop Pop’s coming too!”
+
+As Cherry displayed an image of Nora’s dad (from Costa Rica) which morphed into a full-colored hologram next to the garden bed, little Christine’s eyes lit up. “How are my girls today?” 
+
+“We wanted you to see our new garden. Soon we’ll have fresh vegetables for Christine’s lunch!!“       
+
+The hologram of her dad follows along as Nora walks back up to the house.
+“Honey, I am so happy to be a part of your lives even though I am so far away. I am proud of you. This new technology is wonderful. Have a great day with my Christine…and you too Cherry!”
+
+export default ({ children }) => <div className={styles.container}>{children}</div>

@@ -1,0 +1,27 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+# Everything is Connected
+
+The Internet of Things is nothing new. IoT has been used in manufacturing, along with other industries for years. AR glasses will make even more sense to have everything connected.
+
+{<h2>Cloud, Edge, and 6G</h2>} 
+None of this can happen without Cloud, Edge Computing, and 6G. Along with more advanced hardware, we also need more advanced networks and computing to offload some of the processing power so that we don’t have to wear it on our glasses. 
+
+**Cloud:** Cloud storage is the practice of storing data and content on remote servers accessible via the Internet. 
+
+For AR glasses, cloud storage enables users to offload heavy computational tasks, such as rendering complex graphics or storing large amounts of content, to remote servers. This reduces the burden on the glasses' processing and storage capabilities.
+
+**Edge Computing:** Edge computing involves processing data and performing computations closer to the source, at the network's edge, rather than relying solely on distant data centers. 
+
+In the context of AR glasses, edge computing can enhance real-time responsiveness by handling computational tasks locally, reducing latency. It allows for faster rendering of AR content, minimizing delays and providing a smoother and more immersive user experience.
+
+**6G:** 6G is still in the development stages. For instance, Capgemini opened a 6G research lab in India. 6G is expected to provide ultra-high-speed connectivity and support a massive number of connected devices. 
+
+For AR glasses, this means seamless streaming of high-resolution AR content, enhanced collaborative experiences between multiple glasses, and the potential for advanced AR features like real-time object recognition and improved spatial mapping
+
+**Ultra Wide Band (UWB):** Ultra Wide Band chip sets Apple products like iPhones and Apple watches. {<Link className={styles.link} href={"https://developer.apple.com/nearby-interaction/" ?? ''}>[45]</Link>} UWB allows developers to create apps that let Apple products talk to each other through proximity. UWB is so powerful and works so well that Apple might use it to replace Bluetooth connectivity. {<Link className={styles.link} href={"https://www.zdnet.com/article/uwb-what-it-is-and-why-you-really-need-an-iphone-to-use-it/" ?? ''}>[46]</Link>} Ultra Wide Band is more accurate than GPS and also works indoors - so you can find your keys exactly within your house. Or with AR glasses, they become the digital keys to your car and home.
+
+**All connected:** Cloud storage enables AR glasses to leverage remote servers for heavy computational tasks and content storage. Edge computing enhances real-time responsiveness by processing data locally at the network's edge, improving the user experience. 6G hopes to provide faster and more reliable connectivity, enabling seamless streaming of AR content and spatial mapping.
+
+export default ({ children }) => <div className={styles.container}>{children}</div>

@@ -37,13 +37,23 @@
     z-index: 10;
 }
 
+.linkContainer{
+    display: flex;
+}
+
 .smallImage {
-    width:150px;
+    width:300px;
     height:auto;
 }
 
 @media screen and (max-width: 991px){
     .smallImage {
-        width:100px;
+        width:250px;
+    }
+}
+
+@media screen and (max-width: 551px){
+    .smallImage {
+        width:200px;
     }
 }

@@ -1,0 +1,59 @@
+.container{
+    font-size: large;
+}
+
+.pagePadding{
+    display: block;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.containerSmall{
+    width: 100%;
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.textReplyMessage{
+    padding-left: 3em;
+}
+
+.link{
+    color: #0563C1;
+}
+
+.inBox{
+    border: 1px solid black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media screen and (max-width: 991px){
+    .pagePadding{
+        padding-right: 6vw;
+        padding-left: 6vw;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

@@ -16,7 +16,7 @@
     flex-direction: column;
     border: 1px solid #dbdbdb;
     border-radius: 1rem;
-    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .tableContent{
@@ -24,6 +24,11 @@
     flex-direction: column;
     border: 1px solid #dbdbdb;
     border-radius: 1rem;
+}
+
+.arrow{
+    align-items: center;
+    color: gray;
 }
 
 .textWhiteSpace{
@@ -34,7 +39,7 @@
 .card {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1.2rem;
+    padding: 0.5rem 1.2rem;
     border-radius: var(--border-radius);
     background: rgba(var(--card-rgb), 0);
     border: 1px solid rgba(var(--card-border-rgb), 0);
@@ -53,10 +58,12 @@
 
 .card p {
     margin: 0;
-    opacity: 0.6;
+    opacity: 0.9;
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 30ch;
+    padding: 0.5em;
+    margin: 0;
+    color: gray;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -68,11 +75,30 @@
     .card:hover span {
       transform: translateX(4px);
     }
-  }
+}
   
-  @media (prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
     .card:hover span {
       transform: none;
     }
-  }
+}
   
+
+@media screen and (max-width: 751px){
+    .card p {
+        max-width: 50ch;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .card p {
+        max-width: 30ch;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .card p {
+        max-width: 25ch;
+        font-size: small;
+    }
+}

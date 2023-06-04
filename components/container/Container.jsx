@@ -1,52 +1,60 @@
+import Link from 'next/link'
 import { TitleChapter } from '../TitleChapter/TitleChapter'
 import { Button } from '../button/Button'
-import style from './Container.module.css'
+import { Footer } from '../footer/Footer'
+import styles from './Container.module.css'
 
-const dataFetch = () => {
-  return fetch(process.env.URL + '/api/dataInfo', { cache: 'no-store' })
-    .then(res => res.json())
-}
-
-export async function Container () {
-  const dataButton = await dataFetch()
-
+export function Container () {
   return (
-    <div className={style.pagePadding}>
-      <div className={style.containerSmall}>
-        <div className={style.contentWrapper}>
-          <div className={style.leftContent}>
-            <div className={style.imageWrapper}>
-              <img className={style.mainImage} src='https://m.media-amazon.com/images/I/71cUdAqWctL._AC_UF1000,1000_QL80_.jpg' />
+    <div className={styles.pagePadding}>
+      <div className={styles.containerSmall}>
+        <div className={styles.contentWrapper}>
+          <div className={styles.leftContent}>
+            <div className={styles.imageWrapper}>
+              <img className={styles.mainImage} src='/images/Cover.png' />
+              <div className={styles.divider} />
+              <Button buttonName='Subscribe for updates' buttonlink='/subscription' />
             </div>
-            <div className={style.buttonWrapper}>
-              <h1 className={style.heroHeading}>
-                Mini Book
+            <div className={styles.buttonWrapper}>
+              <h1 className={styles.heroHeading}>
+                A Wearable World: Your Guide to the Post-Smartphone Future Powered by AI, AR, and XR.
               </h1>
-              <p className={style.textSizeRegular}>
-                Cathy Hackl is one of the most sought-after keynote technology speakers in the world. Considered one of the top women in augmented reality, virtual reality, spatial computing and innovation, she works at the intersection of future technology, strategy, and storytelling, drawing audiences from around the world and across industries.
+              <h3 className={styles.heroHeading}>
+                By Cathy Hackl & Lily Snyder
+              </h3>
+              <p className={styles.textSizeRegular}>
+                This <Link href={process.env.URL ?? ''} className={styles.hyperLink}>minibook</Link> is your guide to understanding the impact of Apple’s new Mixed Reality XR device and how it will transform the world of business, communication and collaboration. This free resource is jam packed with insights and foresight from two VR/AR/tech pioneers - <Link href={'https://www.linkedin.com/in/cathyhackl/' ?? ''} className={styles.hyperLink}>Cathy Hackl</Link>, renown <Link href={'https://www.cathyhackl.com/' ?? ''} className={styles.hyperLink}>author/speaker/futurist</Link> and <Link href={'https://journey.world/' ?? ''} className={styles.hyperLink}>tech executive</Link> with extensive experience working in AR/VR, spatial computing and gaming (at HTC VIVE, Magic Leap, AWS, Journey), and seasoned AR/VR/Immersive tech strategist and writer, <Link href={'https://www.linkedin.com/in/lilysnyder/' ?? ''} className={styles.hyperLink}>Lily Snyder</Link>.
               </p>
-              {dataButton.map(button => (<Button key={button.id} buttonName={button.nameButton} buttonlink={button.link} />))}
-              <div className={style.divider} />
-              <div className={style.newsletterWrap}>
-                <div className={style.ctaForm}>
-                  <form className={style.form}>
-                    <div className={style.signupFormWrapper}>
-                      <div className={style.formContainer}>
-                        <input className={style.inputEmail} type='email' maxLength='256' name='Email-Address' placeholder='Enter your email...' />
-                        <input className={style.inputSubmit} type='submit' value='Subscribe' />
+              <p className={styles.textSizeRegular}>
+                Together they have an almost combined two decades of experience in the immersive tech field.
+              </p>
+              <p className={styles.textSizeRegular}>
+                This minibook helps you make sense of the convergence of technologies like VR, AR, AI, XR, and mixed reality today as well as gives you a peek into the post-smartphone and post-computer future, plus an analysis of what Apple’s Reality Pro headset might unlock for business and for humanity. This is Your Guide to the Post-Smartphone Future Powered by AI, AR, and XR.
+              </p>
+              {/* {dataButton.map(button => (<Button key={button.id} buttonName={button.nameButton} buttonlink={button.link} />))} */}
+
+              {/* <div className={styles.newsletterWrap}>
+                <div className={styles.ctaForm}>
+                  <form className={styles.form}>
+                    <div className={styles.signupFormWrapper}>
+                      <div className={styles.formContainer}>
+                        <input className={styles.inputEmail} type='email' pattern=".+@+\.com" size="30" required maxLength='256' name='Email-Address' placeholder='Enter your email...' />
+                        <input className={styles.inputSubmit} type='submit' value='Subscribe' />
                       </div>
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className={style.rightContent}>
-            <div className={style.indexContainer}>
-              <h1 className={style.indexTitle}>
-                Index
+          <div className={styles.rightContent}>
+            <div className={styles.indexContainer}>
+              <h1 className={styles.indexTitle}>
+                Table of Contents
               </h1>
               <TitleChapter />
+              <div className={styles.divider} />
+              <Footer />
             </div>
           </div>
         </div>

@@ -1,0 +1,17 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+# How The World Can Be Our Canvas
+
+In order for the world to be a canvas, AR developers need standards for creating software that supports augmented reality - especially for AR glasses in a post-smartphone world. That’s where OpenXR {<Link className={styles.link} href={"https://awexr.com/blog/703-awe-talks-under-the-hood-with-openxr" ?? ''}>[26]</Link>} and OpenAR Cloud came in. Much like how the World Wide Web is open source for anyone to develop web pages and web-based services, we need a similar structure for augmented reality. 
+
+OpenXR is a royalty-free standard for XR interoperability. OpenXR is on a mission to solve XR fragmentation and to enable “applications and engines, including WebXR, to run on any system that exposes the OpenXR APIs.” It’s device agnostic, which means who you see virtually through your AR glasses, they could be using any brand’s device. OpenXR is an API that is the link between devices and applications. 
+
+An open AR world depends on AR glasses developers using open standards. If not, we might encounter an augmented world where you can only see Apple AR content if you own a pair of Apple glasses. Lisa Watts of Magic Leap encountered the walled garden vs. open, interoperable structures. Open interoperable is a core principle of Magic Leap 2. “The fact that you are in the real world and need content to persist and exist in all of those different scenarios is unique to AR…” said Lisa Watts at AWE 2022. {<Link className={styles.link} href={"https://youtu.be/ctXGa-4SXZA" ?? ''}>[27]</Link>}
+
+OpenAR Cloud is an organization whose mission is to build “a persistent 3D digital copy of the real world.” {<Link className={styles.link} href={"https://www.openarcloud.org/faq" ?? ''}>[28]</Link>} Other names you might hear for AR Cloud are digital twin, the Spatial Web, or real-time geospatial map. The AR Cloud is what will connect our physical world to a digital one, creating an operating system for the spatial era. 
+
+Having an open, AR cloud and Open XR standards will give AR glasses the functionality to connect to the world around us, letting us make the world our canvas. 
+
+
+export default ({ children }) => <div className={styles.container}>{children}</div>

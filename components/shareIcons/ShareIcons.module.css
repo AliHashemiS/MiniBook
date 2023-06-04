@@ -13,9 +13,31 @@
     color: white;
 }
 
+.copyLink {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 991px){
+    .icon {
+        width: 25px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 751px){
     .icon {
         width: 20px;
         height: 16px;
     }
+
+    .socialWrapper{
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width: 551px){
+    .socialWrapper {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    } 
 }

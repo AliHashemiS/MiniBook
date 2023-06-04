@@ -11,6 +11,22 @@
     padding-bottom: 4rem;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.barLoader{
+    position: fixed;
+    height: 75%;
+}
+
+.inputContainer{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
 .containerSmall{
     width: 100%;
     max-width: 850px;
@@ -55,6 +71,7 @@
 .mainImage{
     max-width: 100%;
     border-radius: 6px;
+    margin-top: 0.7em;
 }
 
 .buttonWrapper{
@@ -67,11 +84,14 @@
 .divider{
     width: 100%;
     height: 1px;
-    max-width: 40rem;
     background-color: #dbdbdb;
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.hyperLink {
+    color: #0563C1;
 }
 
 .newsletterWrap{
@@ -86,16 +106,18 @@
 }
 
 .heroHeading{
-    font-size: 2rem;
     font-weight: 700;
     letter-spacing: -.025em;
     color:rgb(139, 53, 240);
+    text-align: center;
 }
 
 .textSizeRegular{
     color: #222;
     font-size: 15px;
     letter-spacing: .005em;
+    text-align: justify;
+    padding: 0;
 }
 
 .ctaForm{

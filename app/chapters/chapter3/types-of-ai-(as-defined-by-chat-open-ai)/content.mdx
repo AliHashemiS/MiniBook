@@ -1,0 +1,26 @@
+import styles from './Content.module.css'
+import Link from 'next/link'
+
+# Types of AI (as defined by Chat.OpenAI)
+
+Visit: {<Link className={styles.link} href={"https://chat.openai.com/share/1a4287c3-b307-4cc2-bab3-2da6e864cbc5" ?? ''}>OpenAI Link</Link>}
+
+**Artificial Intelligence:** Artificial intelligence isn’t a one-and-done term. There are many types of artificial intelligence. Some are still in the research phase while others, like artificial narrow intelligence, are what we use today for voice commands. Essentially AI is the development and implementation of computer systems or machines that can perform tasks that typically require human intelligence.
+
+**Artificial General Intelligence (AGI):** These are highly autonomous systems or machines that possess human-level cognitive capabilities across various domains, enabling them to understand, learn, and perform intellectual tasks similar to or exceeding human capabilities. AGI represents a hypothetical future state of AI where machines possess human-like intelligence and can understand, learn, and perform any intellectual task that a human can do. 
+
+**Artificial Narrow Intelligence (ANI):** These are AI systems that are designed and specialized to perform specific tasks or functions within a limited domain, lacking the ability to exhibit general human-level intelligence or adapt to new contexts beyond their narrow focus.
+
+An example of Artificial Narrow Intelligence is a voice recognition system like Siri or Google Assistant. While they excel at understanding and responding to voice commands, their capabilities are limited to voice-based interactions and specific predefined tasks, such as setting reminders, playing music, or providing weather updates. They lack the ability to engage in complex reasoning or understand context outside of their designated functions.
+
+**Artificial Neural Networks:** These are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected nodes, or "neurons," organized into layers that process and transmit information, allowing the network to learn patterns and make predictions or decisions based on input data.
+
+An example of an artificial neural network is a convolutional neural network (CNN), commonly used in image recognition tasks. A CNN consists of multiple layers of interconnected nodes that analyze visual features of an input image, gradually learning to recognize patterns and objects within the image through training. CNNs have been successful in various applications, such as facial recognition, object detection, and self-driving cars.
+
+**Artificial Super Intelligence (ASI):** This represents a hypothetical level of intelligence that surpasses human intelligence in virtually every aspect, enabling AI systems to outperform humans in almost all cognitive tasks and problem-solving domains. It represents an advanced stage of artificial intelligence development that surpasses the capabilities of human intellect.
+
+The main difference between ASI and AGI lies in their scope and capabilities. AGI refers to highly autonomous systems or machines that possess human-level cognitive abilities across various domains, while ASI represents a hypothetical state where AI systems can surpass human intelligence in virtually all cognitive tasks, exhibiting superior intelligence and problem-solving capabilities. ASI, if achieved, would go beyond AGI and potentially have a profound impact on society and civilization.
+
+**Generative AI:** This is a subset of artificial intelligence that focuses on creating or generating new content, such as images, music, or text, often using techniques like deep learning and neural networks to simulate creative processes and produce original outputs.
+
+export default ({ children }) => <div className={styles.container}>{children}</div>
