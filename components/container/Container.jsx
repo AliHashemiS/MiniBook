@@ -3,6 +3,7 @@ import { TitleChapter } from '../TitleChapter/TitleChapter'
 import { Button } from '../button/Button'
 import { Footer } from '../footer/Footer'
 import styles from './Container.module.css'
+import Subscription from '../subscription/Subscription'
 
 export function Container () {
   return (
@@ -13,7 +14,7 @@ export function Container () {
             <div className={styles.imageWrapper}>
               <img className={styles.mainImage} src='/images/Cover.png' />
               <div className={styles.divider} />
-              <Button buttonName='Subscribe for updates' buttonlink='/subscription' />
+              <Subscription />
             </div>
             <div className={styles.buttonWrapper}>
               <h1 className={styles.heroHeading}>
@@ -32,19 +33,6 @@ export function Container () {
                 This minibook helps you make sense of the convergence of technologies like VR, AR, AI, XR, and mixed reality today as well as gives you a peek into the post-smartphone and post-computer future, plus an analysis of what Apple’s Reality Pro headset might unlock for business and for humanity. This is Your Guide to the Post-Smartphone Future Powered by AI, AR, and XR.
               </p>
               {/* {dataButton.map(button => (<Button key={button.id} buttonName={button.nameButton} buttonlink={button.link} />))} */}
-
-              {/* <div className={styles.newsletterWrap}>
-                <div className={styles.ctaForm}>
-                  <form className={styles.form}>
-                    <div className={styles.signupFormWrapper}>
-                      <div className={styles.formContainer}>
-                        <input className={styles.inputEmail} type='email' pattern=".+@+\.com" size="30" required maxLength='256' name='Email-Address' placeholder='Enter your email...' />
-                        <input className={styles.inputSubmit} type='submit' value='Subscribe' />
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div> */}
             </div>
           </div>
           <div className={styles.rightContent}>

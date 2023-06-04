@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.shareText {
+    color: white;
+}
+
 @media screen and (max-width: 991px){
     .icon {
         width: 25px;

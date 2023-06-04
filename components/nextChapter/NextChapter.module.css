@@ -8,12 +8,31 @@
     align-items: center;
 }
 
-.textContainer{
+.textContainer { 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
     padding-right: 2em;
 }
 
-.textContent{
+.textContent {
     text-align: left;
+    text-align: center;
+}
+
+.textTitle{
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 851px){
+    .container{
+        flex-direction: column;
+    }
+
+    .textContainer{
+        margin: 1em;
+        padding: 0;
+    }
 }

@@ -10,7 +10,11 @@ export default async function ContentPage () {
         <div className={styles.contentWrapper}>
           <Content />
           <div className={styles.divider} />
-          <NextChapter nextChapterName='Find out about AR Technology the easy way' buttonlink='/chapters/chapter1/find-out-about-ar-technology-the-easy-way' />
+          <NextChapter
+            nextChapterName='Find out about AR Technology the easy way'
+            buttonLinkNext='/chapters/chapter1/find-out-about-ar-technology-the-easy-way'
+            buttonLinkPrevious='/chapters/chapter1/the-future-of-ar-glasses-in-a-nutshell'
+          />
         </div>
       </div>
     </div>

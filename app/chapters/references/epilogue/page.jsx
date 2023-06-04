@@ -5,13 +5,16 @@ import styles from './Content.module.css'
 
 export default async function ContentPage () {
   return (
-
     <div className={styles.pagePadding}>
       <div className={styles.containerSmall}>
         <div className={styles.contentWrapper}>
           <Content />
           <div className={styles.divider} />
-          <NextChapter nextChapterName='AR Glasses Glossary' buttonlink='/chapters/ar-glasses-glossary' />
+          <NextChapter
+            nextChapterName='AR Glasses Glossary'
+            buttonLinkNext='/chapters/ar-glasses-glossary'
+            buttonLinkPrevious='/chapters/references/chapter8'
+          />
         </div>
       </div>
     </div>

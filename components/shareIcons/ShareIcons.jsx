@@ -24,6 +24,7 @@ library.add(
 export function ShareIcons () {
   return (
     <div className={styles.socialWrapper}>
+      <h3 className={styles.shareText}>SHARE</h3>
       <Link href={('https://www.facebook.com/sharer/sharer.php?u=' + process.env.URL) ?? ''}>
         <FontAwesomeIcon className={styles.icon} icon={faFacebookF} />
       </Link>

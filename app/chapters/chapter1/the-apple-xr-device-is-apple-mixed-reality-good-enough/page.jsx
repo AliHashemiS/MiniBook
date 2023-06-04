@@ -10,7 +10,11 @@ export default async function ContentPage () {
         <div className={styles.contentWrapper}>
           <Content />
           <div className={styles.divider} />
-          <NextChapter nextChapterName='Chapter 2: Hardware is the Hard Part' buttonlink='/chapters/chapter2/hardware-is-the-hard-part' />
+          <NextChapter
+            nextChapterName='Chapter 2: Hardware is the Hard Part'
+            buttonLinkNext='/chapters/chapter2/hardware-is-the-hard-part'
+            buttonLinkPrevious='/chapters/chapter1/find-out-about-ar-technology-the-easy-way'
+          />
         </div>
       </div>
     </div>

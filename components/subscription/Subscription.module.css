@@ -1,0 +1,40 @@
+.newsletterWrap{
+    display: flex;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.form{
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+    width: auto;
+}
+
+
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.inputEmail{
+    background-color: white;
+    color: black;
+    padding: 0.7em;
+    border: 1px solid #dbdbdb;
+    border-style: solid none solid solid;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 100%;
+}
+
+.inputSubmit{
+    padding: 0.7em;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #222;
+    cursor: pointer;
+}
+
