@@ -2,12 +2,12 @@ import Link from 'next/link'
 import styles from './TitleChapter.module.css'
 
 const dataTitleFetch = () => {
-  return fetch(process.env.URL + '/api/dataTitle')
+  return fetch(process.env.URL + '/api/dataTitle', { cache: 'no-store' })
     .then(res => res.json())
 }
 
 const dataChapterFetch = () => {
-  return fetch(process.env.URL + '/api/dataChapter')
+  return fetch(process.env.URL + '/api/dataChapter', { cache: 'no-store' })
     .then(res => res.json())
 }
 
