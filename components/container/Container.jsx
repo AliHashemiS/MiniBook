@@ -11,7 +11,7 @@ export function Container () {
         <div className={styles.contentWrapper}>
           <div className={styles.leftContent}>
             <div className={styles.imageWrapper}>
-              <img className={styles.mainImage} src='/images/Cover.png'/>
+              <img className={styles.mainImage} src='/images/Cover.png' />
               <div className={styles.divider} />
               <Button buttonName='Subscribe for updates' buttonlink='/subscription' />
             </div>
