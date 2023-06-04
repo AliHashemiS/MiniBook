@@ -14,6 +14,7 @@ export function Container () {
               <img className={styles.mainImage} src='/images/Cover.png' />
               <div className={styles.divider} />
               <Subscription />
+              <div className={styles.divider} />
             </div>
             <div className={styles.buttonWrapper}>
               <h1 className={styles.heroHeading}>

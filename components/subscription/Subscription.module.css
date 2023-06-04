@@ -1,8 +1,16 @@
 .newsletterWrap{
     display: flex;
+    flex-direction: column;
     font-size: 13px;
     line-height: 1;
 }
+
+.newsletterWrap p{
+    margin: 0.8em;
+    margin-top: 0;
+    text-align: center;
+}
+
 
 .form{
     margin-left: 1em;
