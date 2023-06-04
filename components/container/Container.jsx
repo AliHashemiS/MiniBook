@@ -36,7 +36,7 @@ export function Container () {
           <div className={styles.rightContent}>
             <div className={styles.indexContainer}>
               <h1 className={styles.indexTitle}>
-                Table of Contents
+                Content Flow
               </h1>
               <TitleChapter />
               <div className={styles.divider} />
