@@ -12,7 +12,7 @@ export default async function ContentPage () {
           <div className={styles.divider} />
           <NextChapter
             nextChapterName='AR Glasses Glossary'
-            buttonLinkNext='/chapters/ar-glasses-glossary'
+            buttonLinkNext='/chapters/xr-glossary'
             buttonLinkPrevious='/chapters/references/chapter8'
           />
         </div>

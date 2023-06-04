@@ -58,8 +58,8 @@ export default function handler (req, res) {
       },
       {
         id: 12,
-        name: 'AR GLASSES GLOSSARY',
-        link: process.env.URL + '/chapters/ar-glasses-glossary'
+        name: 'XR GLOSSARY',
+        link: process.env.URL + '/chapters/xr-glossary'
       }
     ]
   )
