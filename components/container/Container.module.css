@@ -179,10 +179,6 @@
         height:auto;
     }
 
-    .textSizeRegular{
-        text-align: center;
-    }
-
     .leftContent {
         display: flex;
         flex-direction: column;
