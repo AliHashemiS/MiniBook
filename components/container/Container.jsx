@@ -18,7 +18,7 @@ export function Container () {
             </div>
             <div className={styles.buttonWrapper}>
               <h1 className={styles.heroHeading}>
-                A Wearable World: Your Guide to the Post-Smartphone Future Powered by AI, AR, and XR.
+                A Wearable World: Your Guide to the Post Smartphone Future powered by AI, AR, and Spatial Computing.
               </h1>
               <h3 className={styles.heroHeading}>
                 By Cathy Hackl & Lily Snyder
