@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'A Wearable World',
-  description: 'This minibook is your guide to understanding the impact of Apple’s new Mixed Reality XR device on business and communications.',
+  description: 'This minibook is your guide to understanding the impact of Apple’s new Spatial computing device on business and communications.',
   icons: {
     icon: process.env.URL + '/images/Logo.ico'
   }
