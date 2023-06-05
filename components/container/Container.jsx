@@ -3,6 +3,7 @@ import { TitleChapter } from '../TitleChapter/TitleChapter'
 import { Footer } from '../footer/Footer'
 import styles from './Container.module.css'
 import Subscription from '../subscription/Subscription'
+import Image from 'next/image'
 
 export function Container () {
   return (
@@ -11,7 +12,7 @@ export function Container () {
         <div className={styles.contentWrapper}>
           <div className={styles.leftContent}>
             <div className={styles.imageWrapper}>
-              <img className={styles.mainImage} src='/images/Cover.png' />
+              <Image width={300} height={410} className={styles.mainImage} src='/images/Cover.png' alt='A Wearable world Cover' />
               <div className={styles.divider} />
               <Subscription />
               <div className={styles.divider} />
