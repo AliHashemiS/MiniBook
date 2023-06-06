@@ -8,7 +8,7 @@ export function Header () {
     <header className={styles.nav}>
       <div className={styles.container}>
         <div className={styles.navLeft}>
-          <Link className={styles.linkContainer} href={process.env.URL ?? ''}>
+          <Link className={styles.linkContainer} href={'/' ?? ''}>
             <Image width={300} height={118} className={styles.smallImage} src='/images/TitleWhite.png' alt='A Wearable world Logo' />
           </Link>
         </div>
