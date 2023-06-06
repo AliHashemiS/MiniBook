@@ -11,6 +11,9 @@
     text-align: center;
 }
 
+.subscriptionTitle{
+    padding: 0;
+}
 
 .form{
     margin-left: 1em;

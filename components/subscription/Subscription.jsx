@@ -3,7 +3,7 @@ import styles from './Subscription.module.css'
 export default function Subscription () {
   return (
     <div className={styles.newsletterWrap}>
-      <p>
+      <p className={styles.subscriptionTitle}>
         <b>
           Subscribe to get our latest content by email.
         </b>
