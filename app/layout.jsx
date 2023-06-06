@@ -8,7 +8,7 @@ export const metadata = {
   title: 'A Wearable World',
   description: 'This minibook is your guide to understanding the impact of Apple’s new Spatial computing device on business and communications.',
   icons: {
-    icon: process.env.URL + '/images/Logo.ico'
+    icon: '/images/Logo.ico'
   }
 }
 
