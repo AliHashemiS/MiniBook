@@ -4,6 +4,7 @@ import { Footer } from '../footer/Footer'
 import styles from './Container.module.css'
 import Subscription from '../subscription/Subscription'
 import Image from 'next/image'
+import Comment from '../comment/Comment'
 
 export function Container () {
   return (
@@ -37,6 +38,12 @@ export function Container () {
           </div>
           <div className={styles.rightContent}>
             <div className={styles.indexContainer}>
+              <div className={styles.divider} />
+              <h1 className={styles.indexTitle}>
+                Comment
+              </h1>
+              <Comment />
+              <div className={styles.divider} />
               <h1 className={styles.indexTitle}>
                 Content Flow
               </h1>

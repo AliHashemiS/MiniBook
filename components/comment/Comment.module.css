@@ -1,0 +1,60 @@
+.newsletterWrap{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.newsletterWrap p{
+    margin: 0.8em;
+    margin-top: 0;
+    text-align: center;
+}
+
+.commentTitle{
+    padding: 0;
+}
+
+.form{
+    margin-left: 1em;
+    margin-right: 1em;
+    align-items: center;
+    width: auto;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.inputEmail{
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+    padding: 0.7em;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+}
+
+.inputComment{
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+    padding: 0.7em;
+    border: 1px solid #dbdbdb;
+    width: 100%;
+    resize: vertical;
+}
+
+.inputSubmit{
+    padding: 0.7em;
+    min-width: 200px;
+    border-radius: 2em;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
